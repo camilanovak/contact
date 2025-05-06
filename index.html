@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .photo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+        .photo-placeholder {
+            font-size: 14px;
+            text-align: center;
+            color: #333;
+        }
+        .photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info {
+            flex-grow: 1;
+        }
+        h1 {
+            margin: 0 0 5px 0;
+            font-size: 22px;
+        }
+        .formacao {
+            font-size: 16px;
+            margin: 0;
+            color: #444;
+        }
+        .contatos {
+            margin-top: 30px;
+        }
+        .contatos p {
+            margin: 5px 0;
+        }
+        .contato-item {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #000;
+        }
+        .contato-item:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 480px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .photo-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .contatos {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-container">
+            <div class="photo-placeholder">FOTO</div>
+            <!-- Para adicionar uma foto, remova a div acima e descomente a linha abaixo -->
+            <!-- <img src="sua-foto.jpg" alt="Foto" class="photo"> -->
+        </div>
+        <div class="info">
+            <h1>NOME E SOBRENOME</h1>
+            <p class="formacao">FORMAÇÃO</p>
+        </div>
+    </div>
+
+    <div class="contatos">
+        <p><strong>CONTATOS:</strong></p>
+        <a href="mailto:seu-email@exemplo.com" class="contato-item">* E-MAIL: seu-email@exemplo.com</a>
+        <a href="tel:+5500000000000" class="contato-item">* TELEFONE: (00) 00000-0000</a>
+        <a href="https://www.linkedin.com/in/seu-perfil/" target="_blank" class="contato-item">* LINKEDIN: linkedin.com/in/seu-perfil</a>
+        <a href="http://lattes.cnpq.br/seu-codigo" target="_blank" class="contato-item">* CURRÍCULO LATTES: lattes.cnpq.br/seu-codigo</a>
+    </div>
+</body>
+</html>
